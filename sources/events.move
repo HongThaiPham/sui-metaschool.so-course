@@ -4,6 +4,7 @@ module sui_metaschool::events {
   use sui::tx_context::{Self, TxContext};
   use sui::transfer;
 
+  #[allow(unused_field)]
   struct Hero has key, store {
     id: UID, 
     power: u8
